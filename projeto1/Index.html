@@ -1,15 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="autor" content="Sherlock Holmes Silva">
-    <meta name="description" content="Portifólio de Sherlock Holmes Silva,desenvolvedor web">
-    <meta name="Keywords" content="Desenvolvedor, Web, HTML, CSS, JavaScript, Portifólio, Sherlock Holmes Silva">
-    
-    <title>Prjeto_1</title>
-</head>
-<body>
-</body>
-</html>
+    <meta name="author" content="Enola Holmes">
+    <meta name="description" content="Portfólio de Enola Holmes, desenvolvedora web.">
+    <meta name="keywords" content="Desenvolvedora, Web, HTML, CSS, JavaScript, Portfólio, Enola Holmes">
 
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Sherlock Holmes Silva – Desenvolvedora Web</title>
+</head>
+
+<body>
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo">Sherlock Holmes Silva</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"> <a href="#home" class="nav-link active">Início</a> </li>
+                    <li class="nav-item"> <a href="#about" class="nav-link">Sobre</a> </li>
+                    <li class="nav-item"> <a href="#formation" class="nav-link">Formação</a> </li>
+                    <li class="nav-item"> <a href="#skills" class="nav-link">Habilidades</a> </li>
+                    <li class="nav-item"> <a href="#projects" class="nav-link">Projetos</a> </li>
+                    <li class="nav-item"> <a href="#contact" class="nav-link">Contato</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">
+                    Olá! <br>Eu sou a <span class="home-title-color">Sherlock Holmes Silva</span><br>Desenvolvedora Web
+                </h1>
+                <a href="#contact" class="button">Contato</a>
+            </div>
+
+            <div class="home-img">
+                <br>
+                <br>
+                <img src="./img/imgSherlock.PNG" alt="Foto do Enola" title="Enola">
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <h2 class="section-title">Sobre</h2>
+
+            <div class="about-container bd-grid">
+                <div>
+                    <h2 class="about-subtitle">Olá, eu sou Sherlock Holmes Silva</h2>
+                    <p class="about-text">Sou estudante de Análise e Desenvolvimento de Sistemas na Fatec Sorocaba - SP.
+                        <br>
+                        Sou apaixonada por criar aplicativos web limpos, eficientes e fáceis de usar. Aprendo rápido e
+                        gosto de colaborar com outras pessoas para resolver problemas.
+                    </p>
+
+                    <pre>Estou à disposição para novas oportunidades profissionais!</pre>
+
+                    <br>
+
+                    <h3>Minha Filosofia</h3>
+                    <!-- o <q> é usado para citações: -->
+                    <q>O melhor código é aquele que resolve o problema do usuário com elegância e eficiência.</q>
+
+                </div>
+                <br>
+                <br>
+            </div>
+        </section>
+
+        <section class="formation-section" id="formation">
+            <h2 class="section-title">Formação</h2>
+
+            <div class="formation-container bd-grid">
+                <h3><u>Graduação</u></h3>
+                <p>Tecnologia em Análise e Desenvolvimento de Sistemas
+                    Fatec Sorocaba - SP
+                    Período: 2024 a 2026.
+                </p>
+
+                <br>
+
+                <h3><u>Complementar</u></h3>
+                <ol>
+                    <li>Formação Python - Alura (52 horas)</li>
+                    <li>Spring Boot Framework - Alura (30 horas)</li>
+                    <li>Git - Alura (16 horas)</li>
+                    <li>MySQL - Alura (8 horas)</li>
+                </ol>
+                <br>
+                <br>
+            </div>
+        </section>
+
+        <section class="skills-section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">Habilidades Profissionais</h2>
+                    <p class="skills-text">Minhas habilidades são focadas em <strong>desenvolvimento</strong>, incluindo
+                        <abbr title="HyperText Markup Language">HTML</abbr>, CSS, JavaScript e vários <i>frameworks</i>.
+                    </p>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-name">
+                        <p>HTML5</p>
+                    </div>
+
+                    <div class="skills-bar skills-html">
+                        <div>
+                            <span class="skills-percentage">80%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-name">
+                            <p>CSS3</p>
+                        </div>
+                    </div>
+
+                    <div class="skills-bar skills css"></div>
+
+                    <div>
+                        <span class="skills-percentage">75%</span>
+                    </div>
+                </div>
+
+                <div class="skills-data">
+                    <div class="skills-name">
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div class="skills-bar skills-js"></div>
+
+                    <div>
+                        <span class="skills-percentage">70%</span>
+                    </div>
+                </div>
+
+                <h3>Soft Skills</h3>
+
+                <dl>
+                    <dt><em>Comunicação</em></dt>
+                    <dd>Tenho experiência em apresentar projetos para liderança e clientes.</dd>
+                    <dt><em>Trabalho em equipe</em></dt>
+                    <dd>Em meu último projeto, trabalhei em conjunto com as equipes de marketing e vendas para lançar um
+                        <mark>novo produto</mark>.</dd>
+                </dl>
+
+                <br>
+                <br>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projetcs">
+            <h2 class="section-title">Projetos</h2>
+
+            <div class="projects-text">
+                <h3>Tabela de Projetos</h3>
+                <br>
+                <table class="projects-table">
+                    <thead> <!-- Cabeçalho da tabela-->
+                        <tr>
+                            <th>Projeto</th>
+                            <th>Tecnologias</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody> <!-- Corpo da tabela-->
+                        <tr>
+                            <td>Site pessoal</td>
+                            <td>HTML, CSS e JS</td>
+                            <td>Concluído</td>
+                        </tr>
+
+                        <tr>
+                            <td>E-commerce</td>
+                            <td>React e Node.js</td>
+                            <td><del>Em progresso</del> Concluído</td>
+                        </tr>
+
+                        <tr>
+                            <td>Site institucional da empresa Delph</td>
+                            <td>React, Node.js</td>
+                            <td>Em progresso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="projects-container bd-grid">
+                <div class="projects-img">
+                    <figure>
+                        <a href="https://github" target="_blank">
+                            <img src="./img/pj1.PNG" alt="Imagem do projeto pessoal" width="300" height="300">
+                        </a>
+                        <figcaption>Projeto Pessoal</figcaption>
+                    </figure>
+                </div>
+
+                <div class="projects-img">
+                    <figure>
+                        <a href="endereco do link" target="_blank">
+                            <img src="./img/pj2.PNG" alt="Imagem do projeto E-commerce" width="300"
+                                height="300">
+                        </a>
+                        <figcaption>Projeto E-commerce</figcaption>
+                    </figure>
+                </div>
+
+                <div class="projects-img">
+                    <figure>
+                        <a href="enderoco link">
+                            <img src="./img/pj3.PNG" alt="Imagem do site institucional">
+                        </a>
+                        <figcaption>Projeto Institucional</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
