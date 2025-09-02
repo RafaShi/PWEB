@@ -1,14 +1,68 @@
+/* NÃO ESTÁ RESPONSIVO */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENTO RAIZ (HTML) */
+:root {
+    --corprincipal: #F7F8FA;
+}
+
+/* SCROLL SUAVE */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, 'Times New Roman', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--corprincipal);
+}
+
+/* HEADER E NAVEGAÇÃO */
+.header-1 {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed; /* NÃO MUDA COM O SCROLL*/
+    width: 100%;
+    top: 0;
+}
+
+.nav{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav-logo {
+    color: var(--corprincipal);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    float: left; /* FLUTUA O ELEMENTO ? */
+    padding: 5px 0;
+}
+
 .nav-menu {
     float: right;
 }
 
 .nav-list {
-    list-style: none;
+    list-style: none; /* REMOVER MARCADOR DA LISTA */
 }
 
 .nav-item {
-    display: inline-block;
+    display: inline-block; /* COLOCA DO LADO UM DO OUTRO E PERMITE MUDAR O ESPAÇO ENTRE ELES */
     margin-left: 20px;
+    margin-top: 10px;
 }
 
 .nav-link {
@@ -17,26 +71,28 @@
     padding: 5px 10px;
 }
 
-.nav-link.active,
+.nav-link.active, 
 .nav-link:hover {
     color: #906ce4;
-    background-coor: #555;
-    border-radius: 3px;
+    background-color: #555;
+    border-radius: 5px;
 }
 
+/* SEÇÕES GERAIS */
 section {
     padding: 80px 0;
     width: 960px;
     margin: 0 auto;
 }
 
-.section-tittle {
+.section-title {
+    font-size: 28px;
     text-align: center;
     margin-bottom: 40px;
-    font-size: 28px;
-    color: #8257E5;
+    color: #8257e5;
 }
 
+/* HOME SECTION */
 .home {
     margin-top: 60px;
     overflow: hidden;
@@ -47,13 +103,13 @@ section {
     width: 500px;
 }
 
-.home-tittle {
+.home-title {
     font-size: 32px;
-    margin-botton: 20px
+    margin-bottom: 20px;
 }
 
-.home-titte-color {
-    color: #8257E5;
+.home-title-color {
+    color: #8257e5;
 }
 
 .home-img {
@@ -66,23 +122,20 @@ section {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover; /* PRESERVA A PROPORÇÃO DA IMAGEM */
 }
 
 .button {
     display: inline-block;
-    background-color: #8257E5;
+    background-color: #8257e5;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
     margin-top: 20px;
 }
 
-.button:hover {
-    background-color: #0056b3;
-}
-
+/* ABOUT SECTION */
 .about {
     text-align: center;
 }
@@ -99,9 +152,10 @@ section {
 
 .about-text {
     margin-bottom: 15px;
-    text-align: center;
+    text-align: justify;
 }
 
+/* FORMATION SECTION */
 .formation {
     text-align: center;
 }
@@ -118,13 +172,14 @@ section {
 
 .formation-container p,
 .formation-container ol {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .formation-container ol {
     padding-left: 40px;
 }
 
+/* SKILLS SECTION */
 .skills {
     text-align: center;
 }
@@ -135,12 +190,12 @@ section {
     text-align: left;
 }
 
-.skils-subtitle {
+.skills-subtitle {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
-skills-text {
+.skills-text {
     margin-bottom: 30px;
 }
 
@@ -151,7 +206,7 @@ skills-text {
 }
 
 .skills-names {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .skills-bar {
@@ -164,5 +219,10 @@ skills-text {
 
 .skills-html {
     width: 80%;
-    background-color: #8257E5;
+    background-color: #8257e5;
+}
+
+.skills-css {
+    width: 75%;
+    background-color: #e72c9f;
 }
