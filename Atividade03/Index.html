@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Essência do Design Responsivo</title>
+  <meta name="description" content="Artigo sobre os pilares, técnicas e evolução do design responsivo — Flexbox, Grid, media queries, otimização e acessibilidade.">
+  <!-- Estilos externos: vincule um arquivo CSS separado, por exemplo: <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Ir para o conteúdo</a>
+
+  <header role="banner">
+    <h1>A Essência do Design Responsivo</h1>
+    <p>Uma visão abrangente sobre princípios, técnicas e boas práticas para criar experiências web que funcionem em qualquer dispositivo.</p>
+    <nav aria-label="Ações do artigo">
+      <a href="#refs">Referências</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <article>
+      <section>
+        <p>No cenário atual, em que o acesso à internet se dá por uma multiplicidade de dispositivos, o design responsivo tornou-se um pilar fundamental na construção de experiências digitais. Com a popularização de smartphones, tablets, notebooks e monitores de diferentes tamanhos, a necessidade de um design adaptável é inegável. O design responsivo, portanto, surge como uma filosofia central no desenvolvimento web, não apenas como uma técnica passageira, mas como a resposta concreta às novas demandas da sociedade conectada.</p>
+
+        <p>A essência do design responsivo é garantir que um único layout seja eficiente em qualquer tipo de dispositivo. Em vez de desenvolver versões separadas para desktop, tablet e celular, como era feito no passado, o site é projetado para ser flexível e fluido desde o início. Essa mudança de paradigma revolucionou a forma como os desenvolvedores pensam a arquitetura e a estética dos sites.</p>
+
+        <p>Antes do design responsivo, muitos sites usavam layouts fixos baseados em pixels. Embora funcionassem bem em computadores com resoluções semelhantes, tornavam-se difíceis de navegar em dispositivos menores. Problemas como rolagem horizontal, sobreposição de elementos e fontes ilegíveis eram comuns, prejudicando a usabilidade e a experiência do usuário. O design responsivo veio para corrigir esses problemas, oferecendo uma experiência unificada e intuitiva, com conteúdo sempre acessível, legível e funcional, seja em uma grande tela de desktop ou na tela compacta de um smartphone.</p>
+
+        <h2>Design Responsivo x Design Adaptativo</h2>
+        <p>Essa abordagem se distingue do design adaptativo, que é uma técnica semelhante, mas com uma diferença crucial. Enquanto o design responsivo usa um layout único que se ajusta fluidamente a qualquer tamanho de tela, o design adaptativo se baseia em layouts fixos pré-definidos que são "trocados" em pontos de interrupção específicos. Embora funcione, essa técnica não é tão flexível quanto o design responsivo, pois não cobre as infinitas variações de tamanhos de tela. O design responsivo, com sua natureza fluida, se adapta a qualquer tela, garantindo que a experiência seja otimizada mesmo em dispositivos com tamanhos de tela incomuns.</p>
+      </section>
+
+      <section>
+        <h2>Os Pilares Fundamentais do Design Responsivo</h2>
+
+        <h3>Layouts Flexíveis</h3>
+        <p>Em vez de definir larguras e alturas fixas para os elementos, os desenvolvedores usam unidades relativas, como porcentagens (%), em, rem e vw. Por exemplo, definir uma imagem com <code>width: 80%</code> garante que ela sempre ocupe 80% da largura do seu contêiner, mantendo a flexibilidade e evitando quebras na estrutura.</p>
+
+        <h3>Media Queries</h3>
+        <p>São a espinha dorsal do design responsivo. Elas permitem que o CSS aplique estilos diferentes dependendo das características do dispositivo. A estratégia "mobile-first" utiliza media queries para começar o design em telas pequenas e, em seguida, aprimorá-lo progressivamente para telas maiores.</p>
+
+        <h3>Imagens e Multimídia Flexíveis</h3>
+        <p>Aplicar <code>max-width: 100%</code> impede que a imagem ultrapasse os limites do contêiner. Para otimizações mais sofisticadas, o elemento <code>&lt;picture&gt;</code> e os atributos <code>srcset</code> e <code>sizes</code> permitem que o navegador escolha a imagem mais apropriada.</p>
+
+        <h3>Meta Tag Viewport</h3>
+        <p>A <code>&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;</code> é essencial para que as media queries funcionem corretamente em dispositivos móveis.</p>
+      </section>
+
+      <section>
+        <h2>A Evolução: Flexbox e CSS Grid</h2>
+        <p>Flexbox simplifica a organização de elementos em uma dimensão (linha ou coluna). Para usá-lo, defina <code>display: flex;</code> no elemento pai e utilize propriedades como <code>justify-content</code> e <code>align-items</code>. O CSS Grid é a ferramenta para layouts bidimensionais, usando unidades como <code>fr</code> para distribuir espaço automaticamente entre colunas e linhas.</p>
+      </section>
+
+      <section>
+        <h2>Técnicas de Otimização e Acessibilidade</h2>
+        <p>Reposicionamento de elementos, refluxo de conteúdo, exibição condicional e re-arquitetura da navegação são técnicas para adaptar a interface. A acessibilidade deve ser considerada desde o início: contraste, tamanho de fonte legível e áreas de toque adequadas são cruciais.</p>
+      </section>
+
+      <section>
+        <h2>Frameworks e Exemplos Práticos</h2>
+        <p>Frameworks como Bootstrap, Foundation e Tailwind aceleram o desenvolvimento responsivo oferecendo sistemas de grade e utilitários prontos. Exemplos reais de sites responsivos incluem grandes portais e serviços de streaming que reorganizam conteúdo e navegação conforme o dispositivo.</p>
+      </section>
+    </article>
+
+    <aside id="refs" aria-labelledby="refs-title">
+      <h3 id="refs-title">Referências</h3>
+      <ol>
+        <li>MOZILLA. Design Responsivo. MDN (2024). Disponível em: https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/CSS_layout/Responsive_Design. Acesso em: 18 ago. 2025.</li>
+        <li>NUVEMSHOP. Design Responsivo. Blog Nuvemshop (2024). Disponível em: https://www.nuvemshop.com.br/blog/design-responsivo/. Acesso em: 18 ago. 2025.</li>
+        <li>MICROSOFT. Design Responsivo. Microsoft Learn (2024). Disponível em: https://learn.microsoft.com/pt-br/windows/apps/design/layout/responsive-design. Acesso em: 18 ago. 2025.</li>
+        <li>ALURA. CSS: Flexbox e layouts responsivos (2024). Disponível em: https://www.alura.com.br/conteudo/css-flexbox-layouts-responsivos. Acesso em: 18 ago. 2025.</li>
+      </ol>
+      <p>Créditos: conteúdo adaptado do material fornecido pelo usuário.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© "A Essência do Design Responsivo" — Conteúdo preparado para exibição em HTML.</p>
+  </footer>
+</body>
+</html>
