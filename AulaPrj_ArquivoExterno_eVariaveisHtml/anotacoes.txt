@@ -1,0 +1,68 @@
+Variáveis
+
+    var
+
+        - Escopo de função ou global
+        - Pode ser redeclarada
+        - Pode ser reatribuída
+        - Possui hoisting (é içada para o topo, inicializada como undefined)
+        - Declara uma variável com escopo de função
+        - Funciona dentro e fora de blocos
+        - Pode ser alterada
+        - Não tem escopo de bloco
+
+    let
+
+        - Escopo de bloco
+        - Não pode ser redeclarada no mesmo escopo
+        - Pode ser reatribuída
+        - Possui hoisting, mas gera erro se usada antes da declaração
+        - Declara uma variável com escopo de bloco
+        - Só funciona dentro do bloco onde foi declarada
+        - Tem escopo de bloco
+
+    const
+
+        - Escopo de bloco
+        - Não pode ser redeclarada
+        - Não pode ser reatribuída
+        - Possui hoisting, mas gera erro se usada antes da declaração
+        - Deve ser inicializada no momento da declaração
+        - Se for um objeto ou array, o conteúdo interno pode mudar, mas a variável não pode apontar para outro objeto
+
+    Hoisting
+
+        - É o comportamento do JavaScript de mover as declarações para o topo do escopo antes da execução.
+        - Ocorre com var, let, const e funções.
+        - var é içada e inicializada como undefined.
+        - let e const são içadas, mas não inicializadas (uso antes da declaração gera erro).
+        - Funções declaradas com function são içadas completamente e podem ser usadas antes da definição.
+
+Unicode x UTF-8
+
+    Unicode
+
+        - É um padrão que atribui um número (código) a cada caractere.
+        - Representa caracteres de praticamente todos os idiomas.
+        - O ASCII estendido faz parte do Unicode.
+
+    UTF-8
+
+        - É um formato de codificação que armazena os caracteres Unicode em bytes.
+        - Usa de 1 a 4 bytes por caractere.
+        - Compatível com o ASCII original.
+        - É o formato mais usado na web.
+
+
+Operadores
+
+    && - AND
+    || - OR
+    ! - NOT
+    ^ - XOR
+
+operadores bi a bit
+
+    &
+    |
+    ^
