@@ -1,0 +1,79 @@
+TIPOS DE SAIDA
+
+*innerHTML*
+    document.getElementById ("texto").innerHTML="Meu primeiro texto <b>js<b>!";
+
+    - no documento pegue por elemento pelo id, elemento texto
+    - innerHTML - uma forma de saida
+    - <b> - negrito
+
+
+*document.write*
+
+    - faz o mesmo que o innerHTML
+    - Usado com propósito de teste
+    - 
+    <p>
+            <script> //mesma função do innerHTML
+                document.write('escrito com <u>document.write<u>')
+            </script>
+        </p>
+
+*Alert*
+
+    - escrito no js
+    -aparece uma caixa de aleta na tela
+
+    alert("10+5");
+    //mostra na tela: 15
+
+
+
+*console.log*
+
+    - é mais discreto
+    - da uma resposta dentro da área de desenvolvimento do chome
+    - ver respostas do navegador conforme o desenvolvimento do programa
+    
+    console.log("Oi, isso é um console.log")
+
+
+DECLARAÇÕES
+
+    - o ";" separa uma declaração de outra
+    - o js ignora espaços vazios
+    
+    let a, b, c; //declara variável
+    a=5;
+    b=6;
+    c=7;
+
+    //função
+    function minhafuncao(){
+        document.write(5+5);
+        document.write(5+5);
+        document.write(5+5);
+    }
+
+SINTAXE
+
+console.log(5+5); //10
+console.log("5+5");//5+5
+console.log("5"+5);//55
+console.log("5"+"5");//10
+
+VARIÁVEIS (VAR LET CONST)
+
+*Var*
+
+    var pote = "Bombom";
+    alert(pote);
+    //Bombom
+
+
+    var x, y, z;
+        x=2;
+        y=3;
+        z= a+b;
+        alert(z);
+    //5
