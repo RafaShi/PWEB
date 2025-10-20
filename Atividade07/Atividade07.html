@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pedra, Papel ou Tesoura</title>
+    <link rel="stylesheet" href="Atividade07.css">
+</head>
+
+<body>
+    <div class="conteudo">
+        <div class="cartao" role="application">
+            <h1>Pedra, Papel ou Tesoura</h1>
+            <p class="instrucao">
+                Escolha uma das opções. O computador escolhe usando
+            </p>
+
+            <div class="opcoes" aria-label="Escolhas do jogador">
+                <button class="opcao" data-move="pedra">
+                    <img width="80" height="80" src="https://img.icons8.com/emoji/80/rock-emoji.png" alt="rock-emoji" />
+                </button>
+                <button class="opcao" data-move="papel">
+                    <img width="80" height="80" src="https://img.icons8.com/comic/80/paper.png" alt="paper" />
+                </button>
+                <button class="opcao" data-move="tesoura">
+                    <img width="80" height="80"
+                        src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/80/external-scissors-diy-flaticons-lineal-color-flat-icons-2.png"
+                        alt="external-scissors-diy-flaticons-lineal-color-flat-icons-2" />
+                </button>
+            </div>
+
+            <div class="resultado" id="result">Faça sua escolha para começar.</div>
+
+            <div class="registro" id="log">—</div>
+
+            <p class="dica" style="margin-top:12px">
+                Dica: use as teclas P (pedra), A (papel) e T (tesoura).
+            </p>
+        </div>
+    </div>
+
+    <script src="Atividade07.js"></script>
+</body>
+
+</html>

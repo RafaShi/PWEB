@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 5rem;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao {
+    display: grid;
+    gap: 1rem;
+    padding: 24px;
+    border-radius: 15px;
+    text-align: center;
+    width: 360px;
+
+}
+
+.instrucao {
+    font-size: 80%;
+}
+
+.dica {
+    font-size: 80%;
+}
