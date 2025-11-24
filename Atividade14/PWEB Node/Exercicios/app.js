@@ -1,21 +1,25 @@
-let express = require('express');
-let app=express(); // executando o express
-app.set('view engine', 'ejs');
-app.get('/', function(req,res){
- res.render("home/index");
-});
-app.get('/formulario_adicionar_usuario', function(req,res){
- res.render("admin/adicionar_usuario");
-});
-app.get('/informacao/historia', function(req,res){
- res.render("informacao/historia");
-});
-app.get('/informacao/cursos', function(req,res){
- res.render("informacao/cursos");
-});
-app.get('/informacao/professores', function(req,res){
- res.render("informacao/professores");
-});
+let app = require('./app/config/server'); // carregando servidor
+
+let rotaHome = require('./app/routes/home'); // só está definindo as rotas
+
+rotaHome(app); // está executando
+
+let rotaAdicionarUsuario = require('./app/routes/adicionar_usuario');
+rotaAdicionarUsuario(app);
+
+let rotaHistoria = require('./app/routes/historia');
+rotaHistoria(app);
+
+let rotaCursos = require('./app/routes/cursos');
+rotaCursos(app); // está executando 
+
+let rotaProfessores = require('./app/routes/professores'); // só está definindo
+rotaProfessores(app); // está executando
+
+/* poderia executar assim também*/
+/*
+let rotaAdicionarUsuario = require('./app/routes/adicionar_usuario')(app);
+*/
 app.listen(3000, function(){
- console.log("servidor express carregado");
-}); 
+ console.log("servidor iniciado");
+});
